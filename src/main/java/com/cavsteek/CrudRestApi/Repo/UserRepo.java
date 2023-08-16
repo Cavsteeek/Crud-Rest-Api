@@ -1,4 +1,8 @@
 package com.cavsteek.CrudRestApi.Repo;
 
-public class UserRepo {
+import com.cavsteek.CrudRestApi.Model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepo extends JpaRepository<User,Long> {
+
 }

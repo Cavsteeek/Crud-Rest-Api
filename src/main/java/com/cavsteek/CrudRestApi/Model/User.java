@@ -1,18 +1,19 @@
 package com.cavsteek.CrudRestApi.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column
     private String firstName;
+    @Column
     private String lastName;
+    @Column
     private int age;
+    @Column
     private String occupation;
 
     public long getId() {
